@@ -98,11 +98,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="pago-footer__bottom-row">
+        <div className="page-footer__bottom-row">
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <Menu className="footer-menu" items={mainMenuItems}/>
+                <Menu className="main-menu" items={mainMenuItems}/>
               </div>
             </div>
           </div>
