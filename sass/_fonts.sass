@@ -1,0 +1,18 @@
+$font_path: '/fonts/'
+
+@font-face
+  font-family: 'Open Sans'
+  src: local('Open Sans'), local('Open Sans'), url($font_path + 'OpenSans.woff2') format('woff2'), url($font_path + 'OpenSans.woff') format('woff'), url($font_path + 'OpenSans.ttf') format('truetype')
+  font-weight: 400
+  font-style: normal
+
+$fonts: ( 100: 'Akrobat-Thin', 200: 'Akrobat-ExtraLight',  300: 'Akrobat-Light',  400: 'Akrobat-Regular',  500: 'Akrobat-SemiBold',  600: 'Akrobat-Bold', 700: 'Akrobat-ExtraBold', 800: 'Akrobat-Black')
+@each $f_w, $f_n in $fonts
+  @font-face
+    font-family: 'Akrobat'
+    src: local($f_n), local($f_n), url($font_path + $f_n + '.woff2') format('woff2'), url($font_path + $f_n + '.woff') format('woff'), url($font_path + $f_n + '.ttf') format('truetype')
+    font-weight: $f_w
+    font-style: normal
+
+$font_acrobat: 'Akrobat', sans-serif
+$font_opensans: 'Open Sans', serif
