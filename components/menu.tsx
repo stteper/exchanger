@@ -1,7 +1,7 @@
 export interface IMenuItem {
   title: string,
-    href: string,
-    className?: string
+  href: string,
+  className?: string
 }
 
 interface IMenu {

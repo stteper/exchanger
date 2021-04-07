@@ -11,7 +11,6 @@ interface ILang {
 }
 
 
-
 const LangSwitcher : React.FC<ILang> = ({ items }) => {
   const [curLang, setCurLang] = useState<ILangItem|undefined>(items[0]);
   const [openTimer, setLangOpened] = useState<NodeJS.Timeout|null>(null);

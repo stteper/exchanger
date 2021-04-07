@@ -1,5 +1,6 @@
-import {Menu, IMenuItem}   from '../components/menu';
-import {LangSwitcher, ILangItem}   from '../components/langs';
+import {Menu, IMenuItem} from '../components/menu';
+import {LangSwitcher, ILangItem} from '../components/langs';
+import {NewsSection} from  '../components/news_section';
 
 const mainMenuItems: IMenuItem[] = [
   {
@@ -80,9 +81,11 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <main role="content">
 
+      <main role="content">
+        <NewsSection title="Новости нашего обменника" className="news" newsNumber="3"/>
       </main>
+
       <footer className="page-footer">
         <div className="page-footer__top-row">
           <div className="container">

@@ -7,3 +7,56 @@ p.small
   color: $light_gray
   margin: 0
   padding: 0
+
+.page-sect
+  margin: 50px 0
+  display: block
+  width: 100%
+  overflow: hidden
+  position: relative
+  &__header
+    width: 100%
+    position: relative
+    margin-bottom: 40px
+    & h2
+      width: 100%
+      position: relative
+      color: $sect_title_color
+      font: 36px/36px $font_acrobat
+      font-weight: 600
+      text-transform: uppercase
+      &:before
+        content: ''
+        right: calc( 100% + 15px )
+        top: 5px
+        left: -99999px
+        height: 27px
+        display: block
+        position: absolute
+        background-color: $yellow
+  & p
+    color: $text_color
+    font: 14px/24px $font_opensans
+    margin-bottom: 10px
+    font-weight: normal
+
+// =============================================================================
+// News section
+// =============================================================================
+.news-preview
+  &__title,
+  &__title > a,
+  &__title > a:visited
+    color: $orange
+    font: 18px/30px $font_acrobat
+    font-weight: 500
+    text-align: left
+    margin-bottom: 10px
+    text-decoration: none
+    text-transform: uppercase
+  &__title > a,
+  &__title > a:visited
+    &:hover
+      text-decoration: underline
+  & p.news-preview__date
+    color: $extra_light_gray
