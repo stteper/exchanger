@@ -23,7 +23,7 @@ const getCurrenciesLost = ():Array<ICurrency> => {
     {
       id: 2,
       code: 'bch',
-      img: '/images/currencies/bch.png',
+      img: '/images/currencies/btc.png',
       title: 'Bitcoin Cash',
       symbol: 'BCH',
       lost: 29.4465,
@@ -43,7 +43,7 @@ const getCurrenciesLost = ():Array<ICurrency> => {
     {
       id: 4,
       code: 'dsh',
-      img: '/images/currencies/dsh.png',
+      img: '/images/currencies/dash.png',
       title: 'Dash',
       symbol: 'DSH',
       lost: 568.123,
@@ -53,7 +53,7 @@ const getCurrenciesLost = ():Array<ICurrency> => {
     {
       id: 5,
       code: 'wxr',
-      img: '/images/currencies/wxr.png',
+      img: '/images/currencies/wex.png',
       title: 'WEX RUB',
       symbol: 'WXR',
       lost: 1568.123,
@@ -63,7 +63,7 @@ const getCurrenciesLost = ():Array<ICurrency> => {
     {
       id: 6,
       code: 'wxu',
-      img: '/images/currencies/wxd.png',
+      img: '/images/currencies/wex.png',
       title: 'WEX USD',
       symbol: 'WXU',
       lost: 268.037,
@@ -86,7 +86,7 @@ const LostSection : React.FC<ICurrencyLostSection> = ({ title, className, items 
 
   const content = (
     <div className="col-12">
-      <ul className="row">
+      <ul className={`row ${className}__items`}>
         {viewedItems}
       </ul>
     </div>

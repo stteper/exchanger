@@ -9,11 +9,11 @@ interface ICurrencyParams {
 const Currency : React.FC<ICurrencyParams> = ({ currency, className, showLost = false }) => {
   return (
     <li className={`${className} currency`}>
-      <span className={`icon icon--currency icon--${currency.code.toLowerCase()}`}>
+      <span className={`currency__icon currency__icon--${currency.code.toLowerCase()}`}>
         <img src={currency.img} alt={currency.title} />
       </span>
       <span className="currency__name">{currency.title}</span>
-      {showLost ? <span className="currency__lost">{currency.lost}{currency.symbol}</span> : ''}
+      {showLost ? <span className="currency__lost">{currency.lost}<span className="currency__symbol">{currency.symbol}</span></span> : ''}
     </li>
   );
 };
