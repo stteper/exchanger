@@ -1,6 +1,6 @@
 export interface ISection {
   className: string,
-  title: string,
+  title?: string,
   content?:JSX.Element|Array<JSX.Element>|null
 }
 

@@ -51,7 +51,7 @@ const NewsSection : React.FC<INewsSection> = ({ title, className, newsNumber }) 
   const news = getNews(newsNumber);
   const content = news.map((el) => {
       return (
-        <NewsPreview news={el} containerClass="col-md-4"/>
+        <NewsPreview news={el} containerClass="col-md-4" key={el.id}/>
       );
     });
 
